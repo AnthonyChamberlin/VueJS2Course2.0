@@ -10,6 +10,7 @@
                 <h4 v-show="ninja.show">{{ ninja.speciality }}</h4>
             </li>
         </ul>
+        <button v-on:click="deleteNinja">Delete Ninja</button>
     </div>
 </template>
 
@@ -21,9 +22,14 @@ export default {
             required: true
         }
     },
-    data() {
+    data() { 
         return {
 
+        }
+    },
+    methods: {
+        deleteNinja: function() {
+            this.ninjas.pop();
         }
     }
 }

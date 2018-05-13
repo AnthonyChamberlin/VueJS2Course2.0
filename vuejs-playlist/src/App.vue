@@ -1,23 +1,22 @@
 <template>
-  <div>
+  <div id="app">
    <h1>{{ title }}</h1>
-   <p>{{ greeting() }}</p>
+   <ninjas></ninjas>
   </div>
 </template>
 
 <script>
+import Ninjas from './Ninjas.vue'
+
 export default {
+  components: {
+    'ninjas': Ninjas
+  },
   data () {
     return {
-      title: "Your first vue file wooo"
-    }
-  },
-  methods: {
-    greeting: function() {
-      return "Heyyy man."
+      title: "Ninja App"
     }
   }
-
 }
 </script>
 
@@ -33,6 +32,7 @@ export default {
 
 h1, h2 {
   font-weight: normal;
+  color: purple;
 }
 
 ul {

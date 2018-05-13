@@ -15,18 +15,17 @@
 
 <script>
 export default {
-  data() {
-      return {
-        ninjas: [
-            {name: "Ant", speciality:"Dev Stuff", show: false},
-            {name: "Ben", speciality:"Law", show: false},
-            {name: "Joe", speciality:"Engineering", show: false},
-            {name: "Dan", speciality:"Saving the World", show: false},
-            {name: "Sam", speciality:"Aciton Man", show: false},
-            {name: "Dylan", speciality:"Who the fuck is dylan", show: false},
-        ]
-      }
-  }
+    props: {
+        ninjas: {
+            type: Array,
+            required: true
+        }
+    },
+    data() {
+        return {
+
+        }
+    }
 }
 </script>
 

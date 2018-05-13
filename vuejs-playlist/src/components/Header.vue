@@ -19,7 +19,7 @@ export default {
   },
   methods: {
       changeTitle: function() {
-          this.title = "You're going pro";
+          this.$emit('changeTitle', 'Vue Wizards');
       }
   }
 }
